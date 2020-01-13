@@ -2,15 +2,23 @@ package edu.kis.vh.nursery;
 
 import edu.kis.vh.nursery.defaultCountingOutRhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
+import edu.kis.vh.nursery.factory.ArrayRhymesFactory;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
+import edu.kis.vh.nursery.factory.ListRhymesFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
 class RhymersDemo {
 
     public static void main(String[] args) {
         Rhymersfactory factory = new DefaultRhymersFactory();
-
         testRhymers(factory);
+        System.out.println("\n\n\n");
+        factory=new ArrayRhymesFactory();
+        testRhymers(factory);
+        System.out.println("\n\n\n");
+        factory=new ListRhymesFactory();
+        testRhymers(factory);
+
 
     }
 
