@@ -1,11 +1,13 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.listy.IntArrayStack;
+
 /**
  *
  */
 public class FIFORhymer extends defaultCountingOutRhymer {
 
-    public defaultCountingOutRhymer temp = new defaultCountingOutRhymer();
+    public IntArrayStack temp = new IntArrayStack();
 
     @Override
     public int countOut() {
@@ -22,3 +24,4 @@ public class FIFORhymer extends defaultCountingOutRhymer {
         return ret;
     }
 }
+//na szczycie hierarchi jest IntArrayStack, więc dlatego ta klasa dla atrybutu temp
