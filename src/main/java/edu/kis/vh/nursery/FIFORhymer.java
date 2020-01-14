@@ -7,7 +7,11 @@ import edu.kis.vh.nursery.listy.IntArrayStack;
  */
 public class FIFORhymer extends defaultCountingOutRhymer {
 
+
     public IntArrayStack temp = new IntArrayStack();
+
+    final public defaultCountingOutRhymer temp = new defaultCountingOutRhymer();
+
 
     @Override
     public int countOut() {
